@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" preserve-order="true">
+  <parameter name="URL" value="http://45.55.132.142:3000/login"/>
+   <parameter name="Usr" value="admin@gmail.com"/>
+   <parameter name="pass" value="AbCd1234"/>
+  <test name="Test on chrome">
+  <parameter name="BrowserType" value="Chrome"/>
+    <classes>
+      <class name="TestCliente.Test1"/>
+     <class name="TestCliente.Test2"/>
+     <class name="TestCliente.Test3"/>
+     <class name="TestCliente.Test4"/>
+     <class name="TestCliente.Test5"/>
+    </classes>
+  </test> 
+   <test name="Test on Firefox">
+  <parameter name="BrowserType" value="Firefox"/>
+    <classes>
+      <class name="TestCliente.Test1"/>
+     <class name="TestCliente.Test2"/>
+     <class name="TestCliente.Test3"/>
+     <class name="TestCliente.Test4"/>
+     <class name="TestCliente.Test5"/>
+    </classes>
+  </test> 
+  
+   <test name="Test on Internet Explorer">
+  <parameter name="BrowserType" value="IE"/>
+    <classes>
+      <class name="TestCliente.Test1"/>
+     <class name="TestCliente.Test2"/>
+     <class name="TestCliente.Test3"/>
+     <class name="TestCliente.Test4"/>
+     <class name="TestCliente.Test5"/>
+    </classes>
+  </test> 
+  
+</suite> 
